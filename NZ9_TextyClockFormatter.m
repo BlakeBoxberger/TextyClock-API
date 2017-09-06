@@ -28,4 +28,74 @@
  
 }
 
++ (NSString *)getFrenchTimeString {
+
+  // French version
+  
+  NSArray *hours = @[@"Une", @"Deux", @"Trois", @"Quatre", @"Cinq", @"Six", @"Sept", @"Huit", @"Neuf", @"Dix", @"Onze", @"Douze"];
+  NSArray *minutes = @[@"Pile", @"Un", @"Deux", @"Trois", @"Quatre", @"Cinq", @"Six", @"Sept", @"Huit", @"Neuf", @"Dix", @"Onze", @"Douze", @"Treize", @"Quatorze", @"Quinze", @"Seize", @"Dix-Sept", @"Dix-Huit", @"Dix-Neuf", @"Vingt", @"Vingt-et-Un", @"Vingt-Deux", @"Vingt-Trois", @"Vingt-Quatre", @"Vingt-Cinq", @"Vingt-Six", @"Vingt-Sept", @"Vingt-Huit", @"Vingt-Neuf", @"Trente", @"Trente-et-Un", @"Trente-Deux", @"Trente-Trois", @"Trente-Quatre", @"Trente-Cinq", @"Trente-Six", @"Trente-Sept", @"Trente-Huit", @"Trente-Neuf", @"Quarante", @"Quarante-et-Un", @"Quarante-Deux", @"Quarante-Trois", @"Quarante-Quatre", @"Quarante-Cinq", @"Quarante-Six", @"Quarante-Sept", @"Quarante-Huit", @"Quarante-Neuf", @"Cinquante", @"Cinquante-et-Un", @"Cinquante-Deux", @"Cinquante-Trois", @"Cinquante-Quatre", @"Cinquante-Cinq", @"Cinquante-Six", @"Cinquante-Sept", @"Cinquante-Huit", @"Cinquante-Neuf"];
+
+  // Should only be called when %@ != 1
+  NSString *quarterPast = @"%@ heures et Quart";
+  NSString *quarterTo = [NSString stringWithFormat:@"%@ heures moins le Quart"];
+  NSString *tenPast = [NSString stringWithFormat:@"%@ heures Dix"];
+  NSString *tenTo = [NSString stringWithFormat:@"%@ heures moins Dix"];
+  NSString *halfPast = [NSString stringWithFormat:@"%@ heures et Demi"];
+
+  // Should be called when %@ == 1
+  NSString *quarterPast_singular = @"%@ heure et Quart";
+  NSString *quarterTo_singular = [NSString stringWithFormat:@"%@ heure moins le Quart"];
+  NSString *tenPast_singular = [NSString stringWithFormat:@"%@ heure Dix"];
+  NSString *tenTo_singular = [NSString stringWithFormat:@"%@ heure moins Dix"];
+  NSString *halfPast_singular = [NSString stringWithFormat:@"%@ heure et Demi"];
+
+}
+
+
++ (NSString *)getBelgianTimeString {
+
+  // Belgian version
+  
+  NSArray *hours = @[@"Une", @"Deux", @"Trois", @"Quatre", @"Cinq", @"Six", @"Sept", @"Huit", @"Neuf", @"Dix", @"Onze", @"Douze"];
+  NSArray *minutes = @[@"Pile", @"Un", @"Deux", @"Trois", @"Quatre", @"Cinq", @"Six", @"Sept", @"Huit", @"Neuf", @"Dix", @"Onze", @"Douze", @"Treize", @"Quatorze", @"Quinze", @"Seize", @"Dix-Sept", @"Dix-Huit", @"Dix-Neuf", @"Vingt", @"Vingt-et-Un", @"Vingt-Deux", @"Vingt-Trois", @"Vingt-Quatre", @"Vingt-Cinq", @"Vingt-Six", @"Vingt-Sept", @"Vingt-Huit", @"Vingt-Neuf", @"Trente", @"Trente-et-Un", @"Trente-Deux", @"Trente-Trois", @"Trente-Quatre", @"Trente-Cinq", @"Trente-Six", @"Trente-Sept", @"Trente-Huit", @"Trente-Neuf", @"Quarante", @"Quarante-et-Un", @"Quarante-Deux", @"Quarante-Trois", @"Quarante-Quatre", @"Quarante-Cinq", @"Quarante-Six", @"Quarante-Sept", @"Quarante-Huit", @"Quarante-Neuf", @"Cinquante", @"Cinquante-et-Un", @"Cinquante-Deux", @"Cinquante-Trois", @"Cinquante-Quatre", @"Cinquante-Cinq", @"Cinquante-Six", @"Cinquante-Sept", @"Cinquante-Huit", @"Cinquante-Neuf"];
+
+  // Should only be called when %@ != 1
+  NSString *quarterPast = @"%@ heures et Quart";
+  NSString *quarterTo = [NSString stringWithFormat:@"%@ heures moins le Quart"];
+  NSString *tenPast = [NSString stringWithFormat:@"%@ heures Dix"];
+  NSString *tenTo = [NSString stringWithFormat:@"%@ heures moins Dix"];
+  NSString *halfPast = [NSString stringWithFormat:@"%@ heures et Demi"];
+
+  // Should be called when %@ == 1
+  NSString *quarterPast_singular = @"%@ heure et Quart";
+  NSString *quarterTo_singular = [NSString stringWithFormat:@"%@ heure moins le Quart"];
+  NSString *tenPast_singular = [NSString stringWithFormat:@"%@ heure Dix"];
+  NSString *tenTo_singular = [NSString stringWithFormat:@"%@ heure moins Dix"];
+  NSString *halfPast_singular = [NSString stringWithFormat:@"%@ heure et Demi"];
+
+}
+
++ (NSString *)getSwissTimeString {
+
+  // Swiss version
+  
+  NSArray *hours = @[@"Une", @"Deux", @"Trois", @"Quatre", @"Cinq", @"Six", @"Sept", @"Huit", @"Neuf", @"Dix", @"Onze", @"Douze"];
+  NSArray *minutes = @[@"Pile", @"Un", @"Deux", @"Trois", @"Quatre", @"Cinq", @"Six", @"Sept", @"Huit", @"Neuf", @"Dix", @"Onze", @"Douze", @"Treize", @"Quatorze", @"Quinze", @"Seize", @"Dix-Sept", @"Dix-Huit", @"Dix-Neuf", @"Vingt", @"Vingt-et-Un", @"Vingt-Deux", @"Vingt-Trois", @"Vingt-Quatre", @"Vingt-Cinq", @"Vingt-Six", @"Vingt-Sept", @"Vingt-Huit", @"Vingt-Neuf", @"Trente", @"Trente-et-Un", @"Trente-Deux", @"Trente-Trois", @"Trente-Quatre", @"Trente-Cinq", @"Trente-Six", @"Trente-Sept", @"Trente-Huit", @"Trente-Neuf", @"Quarante", @"Quarante-et-Un", @"Quarante-Deux", @"Quarante-Trois", @"Quarante-Quatre", @"Quarante-Cinq", @"Quarante-Six", @"Quarante-Sept", @"Quarante-Huit", @"Quarante-Neuf", @"Cinquante", @"Cinquante-et-Un", @"Cinquante-Deux", @"Cinquante-Trois", @"Cinquante-Quatre", @"Cinquante-Cinq", @"Cinquante-Six", @"Cinquante-Sept", @"Cinquante-Huit", @"Cinquante-Neuf"];
+
+  // Should only be called when %@ != 1
+  NSString *quarterPast = @"%@ heures et Quart";
+  NSString *quarterTo = [NSString stringWithFormat:@"%@ heures moins le Quart"];
+  NSString *tenPast = [NSString stringWithFormat:@"%@ heures Dix"];
+  NSString *tenTo = [NSString stringWithFormat:@"%@ heures moins Dix"];
+  NSString *halfPast = [NSString stringWithFormat:@"%@ heures et Demi"];
+
+  // Should be called when %@ == 1
+  NSString *quarterPast_singular = @"%@ heure et Quart";
+  NSString *quarterTo_singular = [NSString stringWithFormat:@"%@ heure moins le Quart"];
+  NSString *tenPast_singular = [NSString stringWithFormat:@"%@ heure Dix"];
+  NSString *tenTo_singular = [NSString stringWithFormat:@"%@ heure moins Dix"];
+  NSString *halfPast_singular = [NSString stringWithFormat:@"%@ heure et Demi"];
+
+}
+
 @end
