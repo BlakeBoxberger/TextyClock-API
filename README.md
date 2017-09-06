@@ -2,7 +2,7 @@
 
 If the user has TextyClock installed, get the localized time string by calling the method: 
 
-[NZ9_TextyClockFormatter getTimeString];
+```[NZ9_TextyClockFormatter getTimeString];```
 
 
 To add your translation: create a fork of the GitHub repository, add your method to both the interface and implementation, and submit a pull request.
